@@ -7,7 +7,7 @@
 'use strict';
 
 // Disable this 
-const logging = true;
+const logging = false;
 
 // How often to check to generate network events
 const defaultNetworkCheckInterval = 5;
