@@ -1,7 +1,7 @@
 {
 	"name": "gpio_control",
 	"version": "1.0.11",
-	"description": "GPIO output control for Volumio 3",
+	"description": "Extensive control over GPIO based on system events in Volumio, such as startup, music play/pause, mute, random, repeat, WiFi or Ethernet connection, and host/IP address online status. Configure delays and output durations for precise automation.",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,7 @@
 		"os": [
 			"buster"
 		],
-		"details": "GPIO output control for Volumio3 by Supercrab.",
+		"details": "Gain extensive control over GPIO based on system events in Volumio, including startup, music play, pause, stop, mute on/off, random mode on/off, repeat on/off, repeat all, repeat single, WiFi or Ethernet connection, and host/IP address online status. Configure delays and output durations for precise automation.",
 		"changelog": "1.0.0 - initial release for Volumio3"
 	},
 	"engines": {
