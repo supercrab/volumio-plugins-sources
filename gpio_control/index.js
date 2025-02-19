@@ -26,6 +26,12 @@ const execSync = require('child_process').execSync;
 // gpiox library
 // https://www.npmjs.com/package/@iiot2k/gpiox?activeTab=readme
 
+// Initial state
+const INITIAL_STATE = {
+	OFF: 0,
+	ON: 1
+}
+
 // Duration enum
 const DURATION = {
 	HOURS: 0,
@@ -216,6 +222,7 @@ GPIOControl.prototype.getUIConfig = function() {
 			const enabled = e.concat("Enabled");
 			const pin = e.concat("Pin");
 			const state = e.concat("State");
+			const initialState = e.concat("InitialState");
 			const delay = e.concat("Delay");
 			const delayUnits = e.concat("DelayUnits");
 			const duration = e.concat("Duration");
@@ -225,6 +232,7 @@ GPIOControl.prototype.getUIConfig = function() {
 			const configEnabled = e.concat(".enabled");
 			const configPin = e.concat(".pin");
 			const configState = e.concat(".state");
+			const configInitialState = e.concat(".initialState");
 			const configDelay = e.concat(".delay");
 			const configDelayUnits = e.concat(".delayUnits");
 			const configDuration = e.concat(".duration");
@@ -235,6 +243,7 @@ GPIOControl.prototype.getUIConfig = function() {
 			self.setSwitchElement(uiconf, enabled, config.get(configEnabled)); // event on/off
 			self.setSelectElement(uiconf, pin, config.get(configPin)); // GPIO pin
 			self.setSelectElement(uiconf, state, config.get(configState)); // state
+			self.setSelectElement(uiconf, initialState, config.get(configInitialState) ?? 0); // initial state
 			self.setSelectElement(uiconf, delay, config.get(configDelay)); // delay
 			self.setSelectElement(uiconf, delayUnits, config.get(configDelayUnits)); // delay units
 			self.setSelectElement(uiconf, duration, config.get(configDuration)); // duration
@@ -242,7 +251,7 @@ GPIOControl.prototype.getUIConfig = function() {
 
 			// Populate host if required
 			if (hostEvents.includes(e)) {
-				self.setTextElement(uiconf, `${e}Host`, config.get(configHost));
+				self.setTextElement(uiconf, `${e}Host`, config.get(configHost) ?? "");
 			}
 		});
 
@@ -272,6 +281,7 @@ GPIOControl.prototype.saveConfig = function(data){
 		const enabled = item.concat("Enabled");
 		const pin = item.concat("Pin");
 		const state = item.concat("State");
+		const initialState = item.concat("InitialState");
 		const delay = item.concat("Delay");
 		const delayUnits = item.concat("DelayUnits");
 		const duration = item.concat("Duration");
@@ -282,6 +292,7 @@ GPIOControl.prototype.saveConfig = function(data){
 		config.set(item.concat(".enabled"), data[enabled]);
 		config.set(item.concat(".pin"), data[pin]["value"]);
 		config.set(item.concat(".state"), data[state]["value"]);
+		config.set(item.concat(".initialState"), data[initialState]["value"]);
 		config.set(item.concat(".delay"), data[delay]["value"]);
 		config.set(item.concat(".delayUnits"), data[delayUnits]["value"]);
 		config.set(item.concat(".duration"), data[duration]["value"]);
@@ -323,6 +334,7 @@ GPIOControl.prototype.createGPIOs = function() {
 		const configEnabled = e.concat(".enabled");
 		const configPin = e.concat(".pin");
 		const configState = e.concat(".state");
+		const configInitialState = e.concat(".initialState");
 		const configDelay = e.concat(".delay");
 		const configDelayUnits = e.concat(".delayUnits");	
 		const configDuration = e.concat(".duration");
@@ -331,10 +343,12 @@ GPIOControl.prototype.createGPIOs = function() {
 		const enabled = config.get(configEnabled);
 		const pin = config.get(configPin);
 		const state = config.get(configState);
+		const initialState = config.get(configInitialState);
 		const delay = self.getDurationMs(config.get(configDelay), config.get(configDelayUnits));
 		const delayUnits = self.unitsToString(config.get(configDelayUnits));
 		const duration = self.getDurationMs(config.get(configDuration), config.get(configDurationUnits));
 		const durationUnits = self.unitsToString(config.get(configDurationUnits));
+		const defaultState = (initialState == INITIAL_STATE.ON);
 		var host = "";
 
 		if (enabled){
@@ -351,6 +365,8 @@ GPIOControl.prototype.createGPIOs = function() {
 			if (duration > 0){
 				msg += ` for ${config.get(configDuration)} ${durationUnits}`;
 			}
+			
+			msg += ` (DEFAULT: ${defaultState})`;
 
 			self.log(msg);
 
@@ -367,7 +383,7 @@ GPIOControl.prototype.createGPIOs = function() {
 			self.GPIOs.push(gpio);
 
 			// Default state for GPIO is off
-			gpiox.init_gpio(pin, gpiox.GPIO_MODE_OUTPUT, 0);
+			gpiox.init_gpio(pin, gpiox.GPIO_MODE_OUTPUT, defaultState);
 		}
 	});
 
@@ -636,13 +652,23 @@ GPIOControl.prototype.setSwitchElement = function(obj, field, value){
 GPIOControl.prototype.setSelectElement = function(obj, field, value){
 	const self = this;
 	const result = self.getUIElement(obj, field);
-	if (!result){
-		self.log(`Could not find control ${field}`);
+
+	if (value === null){
+		self.log(`Null value specified for control ${field}.  Defaulting to 0.`);
 	}
 
-	const itemInList = result.options.find(opt => opt.value === value)
+	if (!result){
+		self.log(`Could not find control ${field}`);
+		return;
+	}
+
+	var itemInList = result.options.find(opt => opt.value === value)
 	if (!itemInList){
-		self.log(`Could not find item in list with value ${value} for control ${field}`);
+		self.log(`Could not find item in list with value ${value} for control ${field}.  Trying default...`);
+		itemInList = result.options.find(opt => opt.value === 0);
+		if (!itemInList){
+			self.log(`Could not find default item for control ${field}`);
+		}
 	}
 	
 	result.value.value = itemInList.value;
@@ -828,7 +854,8 @@ GPIOControl.prototype.hostOnline = function(host) {
 		return packetLoss != 100; // If all packets lost then device is offline
 	}
 	catch(e){
-		// this occurs if the host can't be found
+		// this occurs if the host can't be found - this is OK
 	}
+
 	return false;
 };

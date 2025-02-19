@@ -19,20 +19,25 @@
 					"systemStartupEnabled",
 					"systemStartupPin",
 					"systemStartupState",
+					"systemStartupInitialState",
 					"systemStartupDelay",
 					"systemStartupDelayUnits",
 					"systemStartupDuration",
 					"systemStartupDurationUnits",
+
 					"systemShutdownEnabled",
 					"systemShutdownPin",
 					"systemShutdownState",
+					"systemShutdownInitialState",
 					"systemShutdownDelay",
 					"systemShutdownDelayUnits",
 					"systemShutdownDuration",
 					"systemShutdownDurationUnits",
+					
 					"musicPlayEnabled",
 					"musicPlayPin",
 					"musicPlayState",
+					"musicPlayInitialState",
 					"musicPlayDelay",
 					"musicPlayDelayUnits",
 					"musicPlayDuration",
@@ -40,6 +45,7 @@
 					"musicPauseEnabled",
 					"musicPausePin",
 					"musicPauseState",
+					"musicPauseInitialState",
 					"musicPauseDelay",
 					"musicPauseDelayUnits",
 					"musicPauseDuration",
@@ -47,6 +53,7 @@
 					"musicStopEnabled",
 					"musicStopPin",
 					"musicStopState",
+					"musicStopInitialState",
 					"musicStopDelay",
 					"musicStopDelayUnits",
 					"musicStopDuration",
@@ -54,6 +61,7 @@
 					"muteOnEnabled",
 					"muteOnPin",
 					"muteOnState",
+					"muteOnInitialState",
 					"muteOnDelay",
 					"muteOnDelayUnits",
 					"muteOnDuration",
@@ -61,6 +69,7 @@
 					"muteOffEnabled",				
 					"muteOffPin",
 					"muteOffState",
+					"muteOffInitialState",
 					"muteOffDelay",
 					"muteOffDelayUnits",
 					"muteOffDuration",
@@ -68,6 +77,7 @@
 					"randomOnEnabled",
 					"randomOnPin",
 					"randomOnState",
+					"randomOnInitialState",
 					"randomOnDelay",
 					"randomOnDelayUnits",
 					"randomOnDuration",
@@ -75,6 +85,7 @@
 					"randomOffEnabled",
 					"randomOffPin",
 					"randomOffState",
+					"randomOffInitialState",
 					"randomOffDelay",
 					"randomOffDelayUnits",
 					"randomOffDuration",
@@ -82,6 +93,7 @@
 					"repeatOnEnabled",
 					"repeatOnPin",
 					"repeatOnState",
+					"repeatOnInitialState",
 					"repeatOnDelay",
 					"repeatOnDelayUnits",
 					"repeatOnDuration",
@@ -89,6 +101,7 @@
 					"repeatOffEnabled",
 					"repeatOffPin",
 					"repeatOffState",
+					"repeatOffInitialState",
 					"repeatOffDelay",
 					"repeatOffDelayUnits",
 					"repeatOffDuration",
@@ -96,6 +109,7 @@
 					"repeatAllOnEnabled",
 					"repeatAllOnPin",
 					"repeatAllOnState",
+					"repeatAllOnInitialState",
 					"repeatAllOnDelay",
 					"repeatAllOnDelayUnits",
 					"repeatAllOnDuration",
@@ -103,13 +117,17 @@
 					"repeatAllOffEnabled",
 					"repeatAllOffPin",
 					"repeatAllOffState",
+					"repeatAllOffInitialState",
 					"repeatAllOffDelay",
 					"repeatAllOffDelayUnits",
 					"repeatAllOffDuration",
 					"repeatAllOffDurationUnits",					
 					"repeatSingleOnEnabled",
 					"repeatSingleOnPin",
+
+
 					"repeatSingleOnState",
+					"repeatSingleOnInitialState",
 					"repeatSingleOnDelay",
 					"repeatSingleOnDelayUnits",
 					"repeatSingleOnDuration",
@@ -117,6 +135,7 @@
 					"repeatSingleOffEnabled",
 					"repeatSingleOffPin",
 					"repeatSingleOffState",
+					"repeatSingleOffInitialState",
 					"repeatSingleOffDelay",
 					"repeatSingleOffDelayUnits",
 					"repeatSingleOffDuration",
@@ -125,6 +144,7 @@
 					"wifiConnectedEnabled",
 					"wifiConnectedPin",
 					"wifiConnectedState",
+					"wifiConnectedInitialState",
 					"wifiConnectedDelay",
 					"wifiConnectedDelayUnits",
 					"wifiConnectedDuration",
@@ -132,6 +152,7 @@
 
 					"wifiDisconnectedEnabled",
 					"wifiDisconnectedPin",
+					"wifiDisconnectedInitialState",
 					"wifiDisconnectedState",
 					"wifiDisconnectedDelay",
 					"wifiDisconnectedDelayUnits",
@@ -141,6 +162,7 @@
 					"ethernetConnectedEnabled",
 					"ethernetConnectedPin",
 					"ethernetConnectedState",
+					"ethernetConnectedInitialState",
 					"ethernetConnectedDelay",
 					"ethernetConnectedDelayUnits",
 					"ethernetConnectedDuration",
@@ -149,6 +171,7 @@
 					"ethernetDisconnectedEnabled",
 					"ethernetDisconnectedPin",
 					"ethernetDisconnectedState",
+					"ethernetDisconnectedInitialState",
 					"ethernetDisconnectedDelay",
 					"ethernetDisconnectedDelayUnits",
 					"ethernetDisconnectedDuration",
@@ -158,6 +181,7 @@
 					"host1OnlineHost",
 					"host1OnlinePin",
 					"host1OnlineState",
+					"host1OnlineInitialState",
 					"host1OnlineDelay",
 					"host1OnlineDelayUnits",
 					"host1OnlineDuration",
@@ -167,18 +191,17 @@
 					"host1OfflineHost",
 					"host1OfflinePin",
 					"host1OfflineState",
+					"host1OfflineInitialState",
 					"host1OfflineDelay",
 					"host1OfflineDelayUnits",
 					"host1OfflineDuration",
 					"host1OfflineDurationUnits",
 
-
-
-
 					"host2OnlineEnabled",
 					"host2OnlineHost",
 					"host2OnlinePin",
 					"host2OnlineState",
+					"host2OnlineInitialState",
 					"host2OnlineDelay",
 					"host2OnlineDelayUnits",
 					"host2OnlineDuration",
@@ -188,6 +211,7 @@
 					"host2OfflineHost",
 					"host2OfflinePin",
 					"host2OfflineState",
+					"host2OfflineInitialState",
 					"host2OfflineDelay",
 					"host2OfflineDelayUnits",
 					"host2OfflineDuration",
@@ -360,6 +384,36 @@
 						"value": true
 					}
 				},
+				{
+					"id": "systemStartupInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "systemStartupEnabled",
+						"value": true
+					}
+				},
+
+
+
+
+
+
 				{
 					"id": "systemStartupDelay",
 					"element": "select",
@@ -1424,6 +1478,34 @@
 					}
 				},
 				{
+					"id": "systemShutdownInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "systemShutdownEnabled",
+						"value": true
+					}
+				},
+
+
+
+
+				{
 					"id": "systemShutdownDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -2487,6 +2569,32 @@
 					}
 				},
 				{
+					"id": "musicPlayInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "musicPlayEnabled",
+						"value": true
+					}
+				},
+
+
+				{
 					"id": "musicPlayDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -3542,6 +3650,30 @@
 						{
 							"value": false,
 							"label": "TRANSLATE.OFF"
+						}
+					],
+					"visibleIf": {
+						"field": "musicPauseEnabled",
+						"value": true
+					}
+				},
+				{
+					"id": "musicPauseInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
 						}
 					],
 					"visibleIf": {
@@ -4612,6 +4744,34 @@
 						"value": true
 					}
 				},
+
+				{
+					"id": "musicStopInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "musicStopEnabled",
+						"value": true
+					}
+				},
+
+
+
 				{
 					"id": "musicStopDelay",
 					"element": "select",
@@ -5680,6 +5840,32 @@
 					}
 				},
 				{
+					"id": "muteOnInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "muteOnEnabled",
+						"value": true
+					}
+				},
+
+
+				{
 					"id": "muteOnDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -6742,6 +6928,32 @@
 						"value": true
 					}
 				},
+				{
+					"id": "muteOffInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "muteOffEnabled",
+						"value": true
+					}
+				},
+
+
 				{
 					"id": "muteOffDelay",
 					"element": "select",
@@ -7806,6 +8018,34 @@
 					}
 				},
 				{
+					"id": "randomOnInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "randomOnEnabled",
+						"value": true
+					}
+				},
+
+
+
+
+				{
 					"id": "randomOnDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -8868,6 +9108,35 @@
 						"value": true
 					}
 				},
+				{
+					"id": "randomOffInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "randomOffEnabled",
+						"value": true
+					}
+				},
+
+
+
+
+
 				{
 					"id": "randomOffDelay",
 					"element": "select",
@@ -9932,6 +10201,33 @@
 					}
 				},
 				{
+					"id": "repeatOnInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "repeatOnEnabled",
+						"value": true
+					}
+				},
+
+
+
+				{
 					"id": "repeatOnDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -10994,6 +11290,33 @@
 						"value": true
 					}
 				},
+				{
+					"id": "repeatOffInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "repeatOffEnabled",
+						"value": true
+					}
+				},
+
+
+
 				{
 					"id": "repeatOffDelay",
 					"element": "select",
@@ -12058,6 +12381,32 @@
 					}
 				},
 				{
+					"id": "repeatAllOnInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "repeatAllOnEnabled",
+						"value": true
+					}
+				},
+
+
+				{
 					"id": "repeatAllOnDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -13120,6 +13469,34 @@
 						"value": true
 					}
 				},
+				{
+					"id": "repeatAllOffInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "repeatAllOffEnabled",
+						"value": true
+					}
+				},
+
+
+
+
 				{
 					"id": "repeatAllOffDelay",
 					"element": "select",
@@ -14184,6 +14561,34 @@
 					}
 				},
 				{
+					"id": "repeatSingleOnInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "repeatSingleOnEnabled",
+						"value": true
+					}
+				},
+
+
+
+
+				{
 					"id": "repeatSingleOnDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -15246,6 +15651,35 @@
 						"value": true
 					}
 				},
+				{
+					"id": "repeatSingleOffInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_STATE",
+					"doc": "TRANSLATE.GPIO_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "repeatSingleOffEnabled",
+						"value": true
+					}
+				},
+
+
+
+
+
 				{
 					"id": "repeatSingleOffDelay",
 					"element": "select",
@@ -16310,6 +16744,33 @@
 					}
 				},
 				{
+					"id": "wifiConnectedInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "wifiConnectedEnabled",
+						"value": true
+					}
+				},
+
+
+
+				{
 					"id": "wifiConnectedDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -17372,6 +17833,33 @@
 						"value": true
 					}
 				},
+				{
+					"id": "wifiDisconnectedInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "wifiDisconnectedEnabled",
+						"value": true
+					}
+				},
+
+
+
 				{
 					"id": "wifiDisconnectedDelay",
 					"element": "select",
@@ -18439,6 +18927,34 @@
 					}
 				},
 				{
+					"id": "ethernetConnectedInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "ethernetConnectedEnabled",
+						"value": true
+					}
+				},
+
+
+
+
+				{
 					"id": "ethernetConnectedDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -19501,6 +20017,32 @@
 						"value": true
 					}
 				},
+				{
+					"id": "ethernetDisconnectedInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "ethernetDisconnectedEnabled",
+						"value": true
+					}
+				},
+
+
 				{
 					"id": "ethernetDisconnectedDelay",
 					"element": "select",
@@ -20577,6 +21119,32 @@
 					}
 				},
 				{
+					"id": "host1OnlineInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "host1OnlineEnabled",
+						"value": true
+					}
+				},
+
+
+				{
 					"id": "host1OnlineDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -21651,6 +22219,33 @@
 						"value": true
 					}
 				},
+				{
+					"id": "host1OfflineInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "host1OfflineEnabled",
+						"value": true
+					}
+				},
+
+
+
 				{
 					"id": "host1OfflineDelay",
 					"element": "select",
@@ -22727,6 +23322,35 @@
 					}
 				},
 				{
+					"id": "host2OnlineInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "host2OnlineEnabled",
+						"value": true
+					}
+				},
+
+
+
+
+
+				{
 					"id": "host2OnlineDelay",
 					"element": "select",
 					"label": "TRANSLATE.GPIO_DELAY",
@@ -23801,6 +24425,33 @@
 						"value": true
 					}
 				},
+				{
+					"id": "host2OfflineInitialState",
+					"element": "select",
+					"label": "TRANSLATE.GPIO_INITIAL_STATE",
+					"doc": "TRANSLATE.GPIO_INITIAL_STATE_DOC",
+					"value": {
+						"value": 0,
+						"label": "TRANSLATE.OFF"
+					},
+					"options": [
+						{
+							"value": 0,
+							"label": "TRANSLATE.OFF"
+						},
+						{
+							"value": 1,
+							"label": "TRANSLATE.ON"
+						}
+					],
+					"visibleIf": {
+						"field": "host2OfflineEnabled",
+						"value": true
+					}
+				},
+
+
+
 				{
 					"id": "host2OfflineDelay",
 					"element": "select",

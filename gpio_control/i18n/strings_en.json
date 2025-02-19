@@ -58,6 +58,8 @@
 	"GPIO_PIN_DOC": "The GPIO pin you wish to control",
 	"GPIO_STATE": "GPIO State",
 	"GPIO_STATE_DOC": "The state you wish to set the GPIO pin",
+	"GPIO_INITIAL_STATE": "GPIO Initial State",
+	"GPIO_INITIAL_STATE_DOC": "The default state to set for the GPIO pin when the plugin initialises",
 	"SETTINGS_SAVED": "GPIO settings have been saved",
 	"GPIO_DELAY": "Delay",
 	"GPIO_DELAY_DOC": "How long to wait before setting the GPIO state",

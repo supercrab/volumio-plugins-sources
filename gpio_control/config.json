@@ -12,6 +12,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -41,6 +45,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -72,6 +80,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -101,6 +113,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -132,6 +148,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -161,6 +181,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -192,6 +216,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -221,6 +249,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -252,6 +284,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -281,6 +317,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -312,6 +352,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -341,6 +385,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -372,6 +420,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -402,6 +454,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -431,6 +487,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -489,6 +549,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -518,6 +582,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -549,6 +617,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -579,6 +651,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -608,6 +684,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
@@ -643,6 +723,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -677,6 +761,10 @@
       "value": false,
       "type": "boolean"
     },
+    "initialState": {
+      "value": 0,
+      "type": "number"
+    },
     "delay": {
       "value": 0,
       "type": "number"
@@ -710,6 +798,10 @@
     "state": {
       "value": false,
       "type": "boolean"
+    },
+    "initialState": {
+      "value": 0,
+      "type": "number"
     },
     "delay": {
       "value": 0,
